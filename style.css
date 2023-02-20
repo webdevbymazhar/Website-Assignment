@@ -16,6 +16,7 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
     transition: all 0.2s;
+    text-decoration: none;
 }
 body{
     background: #eee;
@@ -257,6 +258,7 @@ header nav.active{
     padding-bottom: 10rem;
     position: relative;
     z-index: 0;
+    margin-bottom: 1rem;
 }
 .home .content{
     text-align: center;
@@ -284,7 +286,7 @@ header nav.active{
     color: var(--black);
     font-weight: 500;
 }
-.heading{
+/* .heading{
     text-align: center;
     padding: 2rem 0;
     padding-bottom:3rem;
@@ -297,7 +299,7 @@ header nav.active{
     color: white;
     padding: .4rem;
     border-radius: 0.8rem;
-}
+} */
 .box-container .box img{
     width: 200px;
     height: 190px;
@@ -307,6 +309,7 @@ header nav.active{
     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
     gap: 1.5rem;
     text-align: center;
+
 }
 .features .box-container .box{
     padding: 3rem 2rem;
@@ -315,6 +318,7 @@ header nav.active{
     outline-offset: -1rem;
     text-align: center;
     box-shadow: var(--box-shadow);
+    margin-top: 1rem;
 }
 
 .features .box-container .box:hover{
@@ -390,6 +394,7 @@ header nav.active{
     outline: var(--outline);
     outline-offset: -1rem;
     text-align: center;
+    margin-top: 2rem;
 }
 .categories .box-container .box:hover{
     outline: var(--outline-hover);
@@ -461,6 +466,7 @@ header nav.active{
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     background: #fff;
+    margin-top: 2rem;
 
 }
 .blogs .box-container .box .content{
@@ -497,6 +503,141 @@ header nav.active{
     color: var(--orange);
     padding-right: .5rem;
 }
+
+
+/* ------------------------------ */
+
+h1{
+    line-height: 0.5;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+  }
+  h1 span {
+    display: inline-block;
+    position: relative;  
+    background-color: #eee;
+    
+  }
+  h1 span:before,
+  h1 span:after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    
+    border-top: 3px solid var(--orange);
+    top: 5px;
+    width: 150px;
+  }
+  h1 span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  h1 span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+.footer{
+    background: #fff;
+    margin-top: 2rem;
+
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i{
+    color: var(--orange);
+}
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+.footer .box-container .box .links i{
+    color: var(--orange);
+    padding-right: .5rem;
+}
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+.footer .box-container .box p{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 2rem 0;
+}
+.footer .box-container .box .flogo{
+    width: 9rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+.footer .box-container .box .share{
+    padding-top: 1rem;
+}
+.footer .box-container .box .share i{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 4rem;
+    font-size: 2rem;
+    color: var(black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+.footer .box-container .box .share i:hover{
+    color: var(--orange);
+    background: #eee;
+}
+.footer .box-container .box .email{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    border: 1px solid black;
+
+}
+.footer .box-container .box .email:hover{
+     outline: none;
+}
+
+.footer .box-container .box .payment-img{
+    margin-top: 1rem;
+    height: 3rem;
+    width: 7rem;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top:2.5rem ;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-top: 2px solid lightgrey;
+}
+.footer .credit span{
+    color: var(--orange);
+
+
+}
+
 
 
 
@@ -548,6 +689,9 @@ header nav.active{
     }
     .header{
         padding: 2rem;
+    }
+    .footer{
+        text-align: center;
     }
     
 }
